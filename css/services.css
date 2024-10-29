@@ -1,0 +1,669 @@
+
+.body{
+ width:100%;
+ height: 100%;
+}
+.img_service_bg{
+
+    position: relative; /* Required to position the h2 absolutely within this container */
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.service {
+    width: 100%;
+    height: 100%; /* Match the height of the container */
+    object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+.service-img{
+    position: absolute; /* Allows positioning over the image */
+    top: 50%; /* Adjust to control the vertical position */
+    left: 25%; /* Adjust to control the horizontal position */
+    transform: translate(-50%, -50%); /* Centers the text */
+    font-size: 2.5rem;
+    color: #fff; /* Makes the text white */
+    border-left: 5px solid #80b3ee; /* Keeps the border on the left side */
+    padding-left: 15px; /* Adds space between the text and border */
+    margin: 0; }
+
+
+/* styles for the strategy section */
+.strategy {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically centered */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px; /* Space inside the section */
+    margin: 20px; /* Space around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.strategy .vision {
+    width: 500px; /* Limit the width of the image */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.strategy .text {
+    flex: 1; /*  Allow the text to take the remaining space */
+}
+
+.strategy h2 {
+    font-size: 2.5em; /* Larger font size for headings */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.strategy p {
+    font-size: 1.2em; /* Font size for the text */
+    color: #555; /* Medium color for text */
+    line-height: 1.6; /* Better line spacing for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments */
+    .strategy {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .strategy .vision {
+        margin-right: 0; /* Remove right margin for mobile */
+        margin-bottom: 20px; /* Add space below image */
+        max-width: 100%; /* Allow image to take full width */
+    }
+    
+    .strategy h2 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+    
+    .strategy p {
+        font-size: 1em; /* Smaller text on mobile */
+    }
+}
+
+
+.img_service_bg {
+    position: relative;
+    margin-top: 50px;
+    display: inline-block; /* This makes sure the h2 centers over the image */
+}
+
+.serv {
+    width: 1350px; /* Adjust this as needed */
+    height: 130px; /* Adjust this as needed */
+    border-radius: 10px;
+}
+
+.serv_img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:whitesmoke;
+    text-align: center;
+    font-size: 2em; /* Adjust the size as needed */
+    margin: 0;
+}
+
+
+/* Styles for the health section */
+.health-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-image {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.health-text {
+    flex: 1;
+    
+}
+
+.health-text h2 {
+    font-size: 2em;
+    color: #f11515;
+    margin-bottom: 20px;
+}
+
+.health-text p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.health-text .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.health-text .read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .health-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .health-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for the health resilience section */
+.health-resilience-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-resilience-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.health-resilience-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.health-resilience-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.health-resilience-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+.head {
+    color: #034203;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.health-resilience-text ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.health-resilience-text ol li {
+    margin-bottom: 10px;
+    list-style-type: disc; /* Rounds bullets */
+    list-style-position: inside; /* Bullets are inside the content */
+    color: #080708;
+}
+
+.health-resilience-text .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.health-resilience-text .read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .health-resilience-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .health-resilience-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .health-resilience-image {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Styles for the maternal and child health section */
+.maternal-child-health-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.maternal-health-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.maternal-health-text {
+    flex: 1;
+}
+
+.maternal-health-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.maternal-health-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+.maternal-health-text .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.maternal-health-text .read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.maternal-health-text ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.maternal-health-text ol li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #080708;
+    font-weight: normal;
+}
+
+.maternal-health-text .full-text strong {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .maternal-child-health-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .maternal-health-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.nutrition-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.nutrition-text {
+    flex: 1;
+}
+
+.nutrition-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.nutrition-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nutrition-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nutrition-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.protection-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.protection-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.protection-text {
+    flex: 1;
+}
+
+.protection-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.protection-text p {
+    font-size: 1.1em;
+    
+    line-height: 1.6;
+}
+
+.protection-text .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.protection-text .read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .protection-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .protection-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.education-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.education-text {
+    flex: 1;
+}
+
+.education-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.education-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+.education-text .read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.education-text .read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .education-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.sports-development-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sports-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.sports-text {
+    flex: 1;
+}
+
+.sports-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.sports-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sports-development-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sports-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.livelihood-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.livelihood-image {
+    max-width: 400px;
+    width: 120%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.livelihood-text {
+    flex: 1;
+}
+
+.livelihood-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.livelihood-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .livelihood-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .livelihood-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.wash-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wash-image {
+    max-width: 400px;
+    width: 100%;
+    height: 420px;
+    
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.wash-text {
+    flex: 1;
+}
+
+.wash-text h2 {
+    font-size: 2em;
+    color: #e71212;
+    margin-bottom: 20px;
+}
+
+.wash-text p {
+    font-size: 1.1em;
+    color: #080708;
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .wash-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wash-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

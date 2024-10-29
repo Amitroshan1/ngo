@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.support-us {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-us h1 {
+    font-size: 2.5rem;
+    color: #e71212;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.support-us p {
+    margin-bottom: 20px;
+}
+
+.support-option {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-option h2 {
+    font-size: 1.8rem;
+    color: #5d67fa;
+    margin-bottom: 10px;
+}
+
+.support-option h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-left: 4px solid #ff9900;
+    padding-left: 10px;
+}
+
+.support-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action {
+    background-color: #053a15;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-size: 1rem;
+}
+
+.call-to-action:hover {
+    background-color: #c50c0c;
+}
+
+.contact-info {
+    background-color: #1b1b0c;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .support-us {
+        padding: 10px;
+    }
+
+    .support-us h1 {
+        font-size: 2rem;
+    }
+
+    .support-option h2, .call-to-action h2, .contact-info h2 {
+        font-size: 1.5rem;
+    }
+}

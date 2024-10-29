@@ -1,0 +1,181 @@
+.img_container_bg {
+
+    position: relative; 
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.about {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.about-img {
+    position: absolute; 
+    top: 50%; 
+    left: 32%;
+    transform: translate(-50%, -50%); 
+    font-size: 2.5rem;
+    color: #fff; 
+    border-left: 5px solid #80b3ee;
+    padding-left: 15px; 
+    margin: 0; }
+
+.abt_container {
+        margin: 20px;
+        padding: 20px; 
+
+        border-radius: 10px; 
+        background-color: #f9f9f9; 
+    }
+    
+    .row {
+        display: flex;
+        gap: 10px;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+    
+    .abt_img {
+        width: 55%;
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 5px; 
+    }
+    
+    .abt_text {
+        width: 50%;
+        font-size: 1rem;
+        line-height: 1.5; 
+        color: #333; 
+        text-align: justify;
+    }
+
+
+    .card-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+  
+      /* Styling for each card */
+      .card {
+        width: 300px;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+  
+      /* Hover effect */
+      .card:hover {
+        transform: translateY(-5px);
+      }
+  
+      /* Header styling */
+      .card h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      /* Description styling */
+      .card p {
+        font-size: 1.2em;
+        color: #555;
+        margin: 8px 0;
+        font-weight: 500;
+      }
+  
+      /* Badge styling for the label */
+      .badge {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        font-weight: 600;
+        margin-top: 15px;
+      }
+
+
+ /* Container for all cards */
+ .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Individual card styling */
+  .team-card {
+    width: 45%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hover effect for cards */
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Image styling */
+  .team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  /* Name and position styling */
+  .team-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+
+  .team-card h4 {
+    font-size: 0.9em;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  /* Short description and "Read More" link */
+  .team-card .short-desc,
+  .team-card .full-desc {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* Hide full description by default */
+  .team-card .full-desc {
+    display: none;
+  }
+
+  /* "Read More" link */
+  .read-more {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+  }
+
+    

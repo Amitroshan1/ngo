@@ -1,0 +1,500 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Prevents scrolling */
+}
+
+.header {
+    background: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+
+
+img {
+    height: 100px;
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    float: right;
+    margin:20px;
+    gap: 16px; /* Add some space between the items */
+    
+}
+
+.nav > ul {
+    background-color: rgb(80, 158, 247);
+    border-radius: 5px;
+    line-height: 1cm;
+    margin: 0;
+    padding: 0 15px; /* Adjust padding for better spacing */  
+}
+
+.nav > ul a {
+    text-decoration: none;
+    color: rgb(235, 17, 17);
+    text-size-adjust: 4px;
+}
+#d{
+    background-color: rgb(18, 223, 18);
+    
+}
+
+.nav > ul:hover{
+    background-color: rgb(0, 26, 255);
+}
+ 
+
+/* Slideshow Styling */
+.slideshow-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    top: 0;
+}
+
+.slideshow {
+    display: flex;
+    height: 100%;
+    animation: slide 80s linear forwards;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.slideshow img:hover {
+    animation-play-state: paused;
+    transform: scale(1.05);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-200%);
+    }
+    30% {
+        transform: translateX(-300%);
+    }
+    30% {
+        transform: translateX(-330%);
+    }
+}
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+/* Text Content Styling */
+.about-text {
+    flex: 3; /* 60% of the section */
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff9900;
+    padding-left: 15px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #5d67fa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #ff9900;
+}
+
+/* Image Styling */
+.about-image {
+    flex: 2; /* 40% of the section */
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Mission Section Styling */
+.mission-section {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+/* Text Content Styling for Mission */
+.mission-text {
+    flex: 3; /* 60% of the section */
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.mission-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff9900;
+    padding-left: 15px;
+}
+
+.mission-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mission-text .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #5d67fa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.mission-text .read-more:hover {
+    color: #ff9900;
+}
+
+/* Image Styling for Mission */
+.mission-image {
+    flex: 2; /* 40% of the section */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section,
+    .mission-section {
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-text,
+    .about-image,
+    .mission-text,
+    .mission-image {
+        flex: 1;
+    }
+    .about-image .image,
+    .mission-image .image {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+}
+
+.value_cont{
+    display: flex;
+    color: rgb(1, 1, 15);
+    justify-content: center;
+    background:rgb(80, 80, 252);
+    margin-left: 25%;
+    width: 50%;
+    height: 100px;
+   
+    border-radius: 10px;
+}
+
+.value_con {
+    text-align: center;
+    margin: 20px; 
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Space between the value items */
+    margin-top: 20px; /* Space between heading and values */
+}
+
+.value-item {
+    margin-top: 20px;
+    border: 2px solid transparent; /* Initial border to avoid layout shift */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 15px 20px; /* Adds padding inside each item */
+    font-size: 1.2rem; /* Font size */
+    color: rgb(12, 12, 12); /* Text color */
+    width: 180px; /* Fixed width for each item */
+    text-align: center; /* Center the text inside the box */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Background colors for each core value */
+.integrity {
+    background-color: #4CAF50; /* Green for Integrity */
+}
+
+.professionalism {
+    background-color: #2196F3; /* Blue for Professionalism */
+}
+
+.love {
+    background-color: #FF4081; /* Pink for Love and Care */
+}
+
+.respect {
+    background-color: #FF9800; /* Orange for Respect */
+}
+
+.diversity {
+    background-color: #9C27B0; /* Purple for Diversity */
+}
+
+.value-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+
+.img_team_bg {
+    position: relative;
+    margin-top: 50px;
+    display: inline-block; /* This makes sure the h2 centers over the image */
+}
+
+.team {
+    width: 1350px; /* Adjust this as needed */
+    height: 130px; /* Adjust this as needed */
+    border-radius: 10px;
+}
+
+.team_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+    text-align: center;
+    font-size: 2em; /* Adjust the size as needed */
+    margin: 0;
+}
+
+.container_team {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Four cards per row with space */
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+}
+
+.cont_director {
+    width: 150px; /* Fixed width for uniform image size */
+    height: 150px; /* Fixed height for uniform image size */
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    object-position: center; /* Centers the image within the area */
+}
+
+.direct-name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.job {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.social-links a:hover img {
+    opacity: 0.7;
+}
+
+
+
+.fot {
+    
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px; 
+    font-family: Arial, sans-serif; 
+}
+
+.footer-container {
+    
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px; 
+    min-width: 250px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #fa8a8a;
+}
+
+.support-us > ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+li {
+    margin: 10px 0; 
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 0.9em; 
+}
+
+.subscribe-btn {
+    display: inline-block; 
+    margin-top: 10px;
+    padding: 10px 20px; 
+    background-color: #e71212; 
+    color: white; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #c50c0c; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px; 
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .locug {
+    color: #c50c0c;
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Optional: Add some margin above and below */
+}
