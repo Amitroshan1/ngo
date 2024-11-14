@@ -20,10 +20,9 @@ body {
 
 
 
-.header_img  {
+img {
     height: 100px;
-    width: 120px;
-    padding-left: 30px;
+    width: 200px;
 }
 
 .nav {
@@ -44,7 +43,7 @@ body {
 
 .nav > ul a {
     text-decoration: none;
-    color: black;
+    color:black;
     text-size-adjust: 4px;
 }
 #d{
@@ -98,8 +97,8 @@ body {
     30% {
         transform: translateX(-300%);
     }
-    40% {
-        transform: translateX(-500%);
+    30% {
+        transform: translateX(-330%);
     }
 }
 
@@ -331,11 +330,10 @@ body {
 .team_img {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: green;
     text-align: center;
-    padding-left: 1090px;
     font-size: 2em; /* Adjust the size as needed */
     margin: 0;
 }
@@ -431,7 +429,7 @@ body {
 
 h2 {
     font-size: 1.5rem;
-    color:#ee0909;
+    color: #570404;
 }
 
 .support-us > ul {
@@ -496,7 +494,7 @@ a:hover {
     border: 0;
   }
   .locug {
-    color:#c50c0c;
+    color: #c50c0c;
     text-align: center; /* Center the text */
     margin: 20px 0; /* Optional: Add some margin above and below */
 }
