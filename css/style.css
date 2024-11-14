@@ -323,7 +323,7 @@ body {
 }
 
 .team {
-    width: 1350px; /* Adjust this as needed */
+    width: 1900px; /* Adjust this as needed */
     height: 130px; /* Adjust this as needed */
     border-radius: 10px;
 }
@@ -331,10 +331,11 @@ body {
 .team_img {
     position: absolute;
     top: 50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
     color: green;
     text-align: center;
+    padding-left: 1090px;
     font-size: 2em; /* Adjust the size as needed */
     margin: 0;
 }
@@ -430,7 +431,7 @@ body {
 
 h2 {
     font-size: 1.5rem;
-    color: #fa8a8a;
+    color:#ee0909;
 }
 
 .support-us > ul {
