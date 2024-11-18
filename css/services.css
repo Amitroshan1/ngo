@@ -1,8 +1,5 @@
 
-.body{
- width:100%;
- height: 100%;
-}
+
 .img_service_bg{
 
     position: relative; /* Required to position the h2 absolutely within this container */
@@ -10,6 +7,8 @@
     height: 150px;
     display: flex;
 }
+
+
 
 .service {
     width: 100%;
@@ -28,7 +27,31 @@
     padding-left: 15px; /* Adds space between the text and border */
     margin: 0; }
 
-
+    @media (max-width: 768px) {
+        .img_service_bg {
+          height: 120px; /* Adjust height for smaller screens */
+        }
+      
+        .service-img {
+          left: 50%; /* Center the text horizontally */
+          font-size: 2rem; /* Adjust text size for better fit */
+          padding-left: 10px; /* Reduce padding for smaller screens */
+        }
+      }
+      
+      /* Media query for mobile devices (max-width: 480px) */
+      @media (max-width: 480px) {
+        .img_service_bg {
+          height: 150px;
+           /* Further reduce height for smaller screens */
+        }
+      
+        .service-img {
+          left: 50%; /* Keep text centered */
+          font-size: 1.5rem; /* Reduce font size for mobile */
+          padding-left: 5px; /* Adjust padding */
+        }
+      }
 /* styles for the strategy section */
 .strategy {
     display: flex; /* Use flexbox for layout */
@@ -108,6 +131,61 @@
     text-align: center;
     font-size: 2em; /* Adjust the size as needed */
     margin: 0;
+}
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Team Image Background */
+    .img_service_bg {
+        margin-top: 30px;  /* Reduce margin for better alignment on tablet */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        height: 200px; /* Set a fixed height for the container */
+    }
+
+    /* Team Image */
+    .serv {
+        width: 80%;  /* Make the image container responsive */
+        height: 120px;  /* Reduce height for smaller screens */
+        border-radius: 8px;  /* Adjust border radius */
+    }
+
+    /* Team Image Text */
+    .serv_img {
+        font-size: 1.5em;  /* Reduce font size on tablet */
+        left: 50%;  /* Center the text horizontally */
+        top: 50%;  /* Keep text vertically centered */
+        transform: translate(-50%, -50%);  /* Maintain centering */
+        position: absolute; /* Position the text over the image */
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Team Image Background */
+    .img_team_bg {
+        margin-top: 20px;  /* Further reduce margin for better mobile experience */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        height: 160px; /* Set a fixed height for mobile */
+    }
+
+    /* Team Image */
+    .serv {
+        width: 90%;  /* Ensure the team image is responsive and fits the screen width */
+        height: 100px;  /* Further reduce height for mobile screens */
+        border-radius: 8px;  /* Keep border radius consistent */
+    }
+
+    /* Team Image Text */
+    .serv_img {
+        font-size: 1.2em;  /* Further reduce font size on mobile */
+        left: 50%;  /* Keep text centered horizontally */
+        top: 50%;  /* Keep text vertically centered */
+        transform: translate(-50%, -50%);  /* Keep the text centered */
+        position: absolute; /* Position the text over the image */
+    }
 }
 
 

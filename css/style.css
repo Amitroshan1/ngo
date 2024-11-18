@@ -20,9 +20,10 @@ body {
 
 
 
-img {
+.header_img{
     height: 100px;
-    width: 200px;
+    width: 120px;
+    padding-left: 20px;
 }
 
 .nav {
@@ -55,6 +56,74 @@ img {
     background-color: rgb(0, 26, 255);
 }
  
+/* Responsive Design */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        flex-direction: column;  /* Stack the header items vertically on tablet */
+        padding: 10px 20px;
+    }
+
+    .header_img {
+        height: 80px;  /* Reduce logo size for tablets */
+        width: 100px;  /* Adjust width accordingly */
+        padding-left: 0;  /* Adjust padding */
+    }
+
+    /* Navigation */
+    .nav {
+        flex-direction: column;  /* Stack the navigation links vertically */
+        align-items: center;  /* Center the navigation links */
+        gap: 10px;  /* Reduced gap between items */
+        margin-top: 10px;
+    }
+
+    .nav > ul {
+        padding: 8px 15px;  /* Reduce padding for better mobile/tablet look */
+        width: 100%;  /* Ensure the menu takes full width */
+        text-align: center;  /* Center align navigation items */
+    }
+
+    .nav > ul a {
+        font-size: 1rem;  /* Smaller font size for navigation links */
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Header */
+    .header {
+        padding: 10px 15px;  /* Reduce padding for mobile */
+    }
+
+    .header_img {
+        height: 60px;  /* Further reduce logo size */
+        width: 80px;  /* Adjust width accordingly */
+    }
+
+    /* Navigation */
+    .nav {
+        flex-direction: column;  /* Stack navigation links vertically */
+        gap: 8px;  /* Smaller gap between items */
+        margin-top: 10px;
+    }
+
+    .nav > ul {
+        padding: 6px 10px;  /* Reduce padding */
+        width: 100%;  /* Make navigation items fill the width */
+    }
+
+    .nav > ul a {
+        font-size: 0.9rem;  /* Reduce font size for smaller screens */
+    }
+
+    /* Specific styling for button (if any in your layout) */
+    #d {
+        padding: 5px 10px;  /* Adjust button size for mobile */
+    }
+}
 
 /* Slideshow Styling */
 .slideshow-container {
@@ -233,7 +302,7 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-section,
-    .mission-section {
+    .mission-section,.row {
         flex-direction: column;
         width: 90%;
     }
@@ -314,6 +383,67 @@ img {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
+/* Responsive Design for .value_cont, .value_con, .value-item */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Value Container */
+    .value_cont {
+        margin-left: 10%;  /* Reduce left margin */
+        width: 80%;  /* Increase width to fit better on tablets */
+        height: 120px;  /* Adjust height for tablet screens */
+        flex-direction: column;  /* Stack the content vertically */
+        justify-content: center;
+    }
+
+    /* Value Section (Text content) */
+    .value_con {
+        margin: 10px;
+    }
+
+    /* Value Items (individual values) */
+    .value-item {
+        width: 150px;  /* Reduce width to make space */
+        font-size: 1rem;  /* Slightly reduce font size */
+        padding: 10px 15px;  /* Adjust padding */
+    }
+
+    .values {
+        flex-direction: column;  /* Stack value items vertically */
+        align-items: center;  /* Center align the items */
+        gap: 15px;  /* Smaller gap between items */
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Value Container */
+    .value_cont {
+        margin-left: 0;  /* Remove left margin for mobile */
+        width: 90%;  /* Make the container take most of the screen width */
+        height: 100px;  /* Adjust height for mobile */
+        flex-direction: column;  /* Stack vertically for mobile */
+        justify-content: center;
+    }
+
+    /* Value Section (Text content) */
+    .value_con {
+        margin: 8px;  /* Reduce margin for mobile */
+    }
+
+    /* Value Items */
+    .value-item {
+        width: 120px;  /* Reduce width for mobile */
+        font-size: 0.9rem;  /* Reduce font size for smaller screens */
+        padding: 8px 12px;  /* Adjust padding */
+    }
+
+    .values {
+        flex-direction: column;  /* Stack value items vertically */
+        align-items: center;  /* Center align the items */
+        gap: 10px;  /* Even smaller gap between items */
+    }
+}
 
 .img_team_bg {
     position: relative;
@@ -337,6 +467,64 @@ img {
     font-size: 2em; /* Adjust the size as needed */
     margin: 0;
 }
+/* Responsive Design for Team Section */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Team Image Background */
+    .img_team_bg {
+        margin-top: 30px;  /* Reduce margin for better alignment on tablet */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        height: 200px; /* Set a fixed height for the container */
+    }
+
+    /* Team Image */
+    .team {
+        width: 80%;  /* Make the image container responsive */
+        height: 120px;  /* Reduce height for smaller screens */
+        border-radius: 8px;  /* Adjust border radius */
+    }
+
+    /* Team Image Text */
+    .team_img {
+        font-size: 1.5em;  /* Reduce font size on tablet */
+        left: 50%;  /* Center the text horizontally */
+        top: 50%;  /* Keep text vertically centered */
+        transform: translate(-50%, -50%);  /* Maintain centering */
+        position: absolute; /* Position the text over the image */
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Team Image Background */
+    .img_team_bg {
+        margin-top: 20px;  /* Further reduce margin for better mobile experience */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontally center the content */
+        align-items: center; /* Vertically center the content */
+        height: 160px; /* Set a fixed height for mobile */
+    }
+
+    /* Team Image */
+    .team {
+        width: 90%;  /* Ensure the team image is responsive and fits the screen width */
+        height: 100px;  /* Further reduce height for mobile screens */
+        border-radius: 8px;  /* Keep border radius consistent */
+    }
+
+    /* Team Image Text */
+    .team_img {
+        font-size: 1.2em;  /* Further reduce font size on mobile */
+        left: 50%;  /* Keep text centered horizontally */
+        top: 50%;  /* Keep text vertically centered */
+        transform: translate(-50%, -50%);  /* Keep the text centered */
+        position: absolute; /* Position the text over the image */
+    }
+}
+
 
 .container_team {
     max-width: 1200px;
@@ -432,6 +620,10 @@ h2 {
     color: #570404;
 }
 
+.footerh2 {
+    font-size: 1.5rem;
+    color: #89f014;
+}
 .support-us > ul {
     list-style-type: none;
     padding: 0; 
